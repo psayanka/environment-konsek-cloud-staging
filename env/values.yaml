@@ -9,6 +9,7 @@ controllerbuild:
   enabled: true
 controllerworkflow:
   enabled: false
+dockerRegistry: 228804139688.dkr.ecr.us-east-1.amazonaws.com
 expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
@@ -17,7 +18,7 @@ expose:
   - --v
   - 4
   config:
-    domain: konsek.cloud
+    domain: 3.219.63.28.nip.io
     exposer: Ingress
     http: "true"
 jenkins:
